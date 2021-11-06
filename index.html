@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Youtube Clone</title>
+</head>
+<body>
+    <main class="wrapper">
+        <!-- --------navbar-------- -->
+       <nav class="navbar">
+            <div class="nav-left">
+                <button class="navBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </button>
+                <a href="#">
+                    <div class="nav-logo">
+                        <img src="./img/youtube-logo.png" class="logo" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="search-box">
+                <div class="search-wrapper">
+                    <input type="text" placeholder="Tìm kiếm" class="search-bar">
+                    <i class="far fa-keyboard keyboard"></i>
+                </div>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-options">
+                <button><i class="fas fa-th"></i></button>
+                <button><i class="fas fa-ellipsis-v"></i></button>
+                
+                <a href="#">
+                    <div class="form-login">
+                            <i class="far fa-user-circle"></i>
+                            <p>Đăng nhập</p>
+                    </div>
+                </a>
+            </div>
+       </nav>
+
+        <!-- --------side bar-------- -->
+       <div class="side-bar">
+        <ul class="side-bar-list">
+            <li class="active">
+                <a href="#"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-compass"></i><span>Khám phá</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-youtube"></i><span>Kênh đăng ký</span></a>
+            </li>
+            <hr class="seperate">
+            <li>
+                <a href="#"><i class="fas fa-play"></i><span>Thư viện</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-history"></i><span>Video đã xem</span></a>
+            </li>
+            <hr class="seperate">
+            <li class="login-2">
+                <p class="filter-title">Hãy đăng nhập để thích video, bình luận và đăng ký kênh.</p>
+                <a href="#">
+                    <div class="form-login">
+                            <i class="far fa-user-circle"></i>
+                            <p>Đăng nhập</p>
+                    </div>
+                </a>
+            </li>
+            <hr class="seperate">
+            <li>
+                <a href="#"><i class="far fa-compass"></i><span>Khám phá</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-youtube"></i><span>Kênh đăng ký</span></a>
+            </li>
+            <hr class="seperate">
+            <li>
+                <a href="#"><i class="fas fa-play"></i><span>Thư viện</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-history"></i><span>Video đã xem</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="far fa-compass"></i><span>Khám phá</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-youtube"></i><span>Kênh đăng ký</span></a>
+            </li>
+            <hr class="seperate">
+            <li>
+                <a href="#"><i class="fas fa-play"></i><span>Thư viện</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-history"></i><span>Video đã xem</span></a>
+            </li>
+        </ul>
+       </div>
+
+        <div  class="filters">
+            <button class="filter-options active">Tất cả</button>
+            <button class="filter-options">Trực tiếp</button>
+            <button class="filter-options">Bóng đá</button>
+            <button class="filter-options">Âm nhạc</button>
+            <button class="filter-options">Game</button>
+            <button class="filter-options">Lmht</button>
+            <button class="filter-options">Html</button>
+            <button class="filter-options">Css intelligence</button>
+            <button class="filter-options">Javascript</button>
+            <button class="filter-options">Đã xem</button>
+            <button class="filter-options">Đề xuất mới</button>
+            <button class="filter-options">Mới tải lên gần đây</button>
+        </div>
+
+        <div class="video-container ">
+            <!-- <div class="video">
+                <div class="thumbnail">
+                    <a href="#">
+                        <img src="https://i.ytimg.com/vi/a2Nr6bubN8Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD4sDUleWnKOgoCzUzJoSqDApR-Yg" alt="">
+                    </a>
+                </div>
+                <div class="content">
+                    <img src="https://i.ytimg.com/vi/a2Nr6bubN8Y/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD4sDUleWnKOgoCzUzJoSqDApR-Yg" class="channel-icon" alt="">
+                    <div class="info">
+                        <a href="#">
+                            <h4 class="title">KIẾM KHÁCH SỐ 1 | THỎ BẢY MÀU</h4>
+                        </a>
+                        <p class="channel-name">THỎ BẢY MÀU</p>
+                        <span class="date">1,9 Tr lượt xem &bull; 1 trước trước</span>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>
